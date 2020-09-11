@@ -53,6 +53,11 @@ body {
     color: #15224E !important;
 }
 
+.text-black {
+    color: #000000 !important;
+}
+
+
 .text-orange {
     color: #F4991A !important;
 }
@@ -62,18 +67,12 @@ body {
     background-color: #15224E !important;
 }
 
-.text-lightgreen {
-    color: #0AC97E !important;
-}
-
 .btn-orange {
     background-color: #F4991A !important;
 }
 
-.bg-ponder {
-    background-color: #F0FFF8;
-}
-
-.divround {
-    border-radius: 22px;
+.hero {
+    background-image: url("../images/hero-ng.png");
+    background-size: cover;
+    min-height: 500px;
 }
