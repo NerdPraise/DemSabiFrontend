@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Graphik";
+    font-weight: 100 200;
+    src: url("../fonts/graphik/GraphikLight.otf")
+}
+
+@font-face {
+    font-family: "Graphik";
+    font-weight: 400;
+    src: url("../fonts/graphik/GraphikRegular.otf")
+}
+
+@font-face {
+    font-family: "Graphik";
+    font-weight: 500;
+    src: url("../fonts/graphik/GraphikMedium.otf")
+}
+
+@font-face {
+    font-family: "Graphik";
+    font-weight: 600;
+    src: url("../fonts/graphik/GraphikSemibold.otf")
+}
+
+@font-face {
+    font-family: "Graphik";
+    font-weight: 700;
+    src: url("../fonts/graphik/GraphikBold.otf")
+}
+
+@font-face {
+    font-family: "Graphik";
+    font-weight: 800 900;
+    src: url("../fonts/graphik/GraphikSuper.otf")
+}
+
+
+
+
+*,
+body {
+    font-family: 'Graphik', Fallback, sans-serif;
+}
+
+.colorr {
+    background: -webkit-linear-gradient(45deg, #E00909, #EB12A9, #0e03a1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-blue {
+    color: #15224E !important;
+}
+
+.text-orange {
+    color: #F4991A !important;
+}
+
+.bg-blue,
+.btn-blue {
+    background-color: #15224E !important;
+}
+
+.text-lightgreen {
+    color: #0AC97E !important;
+}
+
+.btn-orange {
+    background-color: #F4991A !important;
+}
+
+.bg-ponder {
+    background-color: #F0FFF8;
+}
+
+.divround {
+    border-radius: 22px;
+}
