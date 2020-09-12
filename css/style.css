@@ -76,3 +76,7 @@ body {
     background-size: cover;
     min-height: 500px;
 }
+
+.divrounded {
+    border-radius: 25px;
+}
