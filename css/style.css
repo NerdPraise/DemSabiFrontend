@@ -34,11 +34,7 @@
     src: url("../fonts/graphik/GraphikSuper.otf")
 }
 
-
-
-
-*,
-body {
+*, body {
     font-family: 'Graphik', Fallback, sans-serif;
 }
 
@@ -57,13 +53,11 @@ body {
     color: #000000 !important;
 }
 
-
 .text-orange {
     color: #F4991A !important;
 }
 
-.bg-blue,
-.btn-blue {
+.bg-blue, .btn-blue {
     background-color: #15224E !important;
 }
 
@@ -83,4 +77,8 @@ body {
 
 .divrounded-top {
     border-radius: 25px 25px 0 0;
+}
+
+.blurbs {
+    height: 180px;
 }
