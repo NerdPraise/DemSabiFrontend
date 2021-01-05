@@ -7,14 +7,16 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/536ef20951.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="index">
-        <div class="hero">
-            <div class="container pt-5">
+        <div class="hero mb-5">
+            <div class="container-fluid px-5 pt-5">
                 <div class="row pt-5">
-                    <div class="col-9 mx-auto">
+                    <div class="col-11 mx-auto">
                         <div class="hero-header h1 font-weight-bold text-white text-center"> An online platform to
                             access best
                             <br>credible vendors.
@@ -83,109 +85,140 @@
             </div>
         </div>
         <div class="trending">
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="row pt-5">
                     <div class="col-12 d-flex justify-content-between">
-                        <div class="h3">Trending Vendors</div>
+                        <div class="h3 header-font">Trending Vendors</div>
                         <a href="#" style="text-decoration: none;">
-                            <div class="text-blue"> <i class="fas mr-2 fa-filter"></i> Filter <i
-                                    class="fas ml-2 fa-angle-down"></i>
+                            <div class="resp-text" style="color:rgba(21, 34, 78, 0.8);"> <i
+                                    class="fas mr-2 fa-filter"></i>
+                                Filter <i class="fas ml-2 fa-angle-down"></i>
                             </div>
                         </a>
                     </div>
                     <div class="col-12">
                         <div class="row pb-3">
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
-                                    <img src="images/bottle.png" class="card-img-top divrounded-top" alt="vendor image">
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="1700">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="card-title">13 Scents Perfumery </h5>
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
                                             <a href="#" target="_blank" style="text-decoration: none;"> <i
                                                     class="fas text-secondary fa-external-link-alt"></i></a>
                                         </div>
-                                        <p class="card-text font-weight-light">Some quick example text to build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> REVIEWS <br> <span
-                                                class="text-black font-weight-bold">1,152</span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
                                         </div>
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> RATING <br> <span
-                                                class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
                                         </div>
-                                        <div class="text-black" style="font-weight: 500;"> Lagos, Nigeria.</div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
-                                    <img src="images/bottle.png" class="card-img-top divrounded-top" alt="vendor image">
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="2500">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="card-title">13 Scents Perfumery </h5>
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
                                             <a href="#" target="_blank" style="text-decoration: none;"> <i
                                                     class="fas text-secondary fa-external-link-alt"></i></a>
                                         </div>
-                                        <p class="card-text font-weight-light">Some quick example text to build on the
-                                            card title and
-                                            make
-                                            up the bulk james of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> REVIEWS <br> <span
-                                                class="text-black font-weight-bold">1,152</span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
                                         </div>
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> RATING <br> <span
-                                                class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
                                         </div>
-                                        <div class="text-black" style="font-weight: 500;"> Lagos, Nigeria.</div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
-                                    <img src="images/bottle.png" class="card-img-top divrounded-top" alt="vendor image">
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="3000">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="card-title">13 Scents Perfumery </h5>
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
                                             <a href="#" target="_blank" style="text-decoration: none;"> <i
                                                     class="fas text-secondary fa-external-link-alt"></i></a>
                                         </div>
-                                        <p class="card-text font-weight-light">Some quick example text to build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> REVIEWS <br> <span
-                                                class="text-black font-weight-bold">1,152</span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
                                         </div>
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> RATING <br> <span
-                                                class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
                                         </div>
-                                        <div class="text-black" style="font-weight: 500;"> Lagos, Nigeria.</div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
 
                                     </div>
                                 </div>
@@ -193,7 +226,8 @@
                         </div>
                         <div class="row py-3">
                             <div class="col-12">
-                                <div class="float-right h5"><a href="#" class="text-orange font-italic">View all
+                                <div class="float-right h5"><a href="#" class="text-orange font-italic resp-text"
+                                        style="font-weight: 500;">View all
                                         trending
                                         vendors</a>
                                 </div>
@@ -206,109 +240,266 @@
         </div>
 
         <div class="spotlight">
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="row pt-5">
                     <div class="col-12 d-flex justify-content-between">
-                        <div class="h3">Spotlight Vendors Of The Week</div>
+                        <div class="h3 header-font">Spotlight Vendors Of The Week</div>
                         <a href="#" style="text-decoration: none;">
-                            <div class="text-blue"> <i class="fas mr-2 fa-filter"></i> Filter <i
-                                    class="fas ml-2 fa-angle-down"></i>
+                            <div class="resp-text" style="color:rgba(21, 34, 78, 0.8);""> <i class=" fas mr-2
+                                fa-filter">
+                                </i> Filter <i class="fas ml-2 fa-angle-down"></i>
                             </div>
                         </a>
                     </div>
                     <div class="col-12">
                         <div class="row pb-3">
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
-                                    <img src="images/bottle.png" class="card-img-top divrounded-top" alt="vendor image">
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="1700">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="card-title">13 Scents Perfumery </h5>
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
                                             <a href="#" target="_blank" style="text-decoration: none;"> <i
                                                     class="fas text-secondary fa-external-link-alt"></i></a>
                                         </div>
-                                        <p class="card-text font-weight-light">Some quick example text to build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> REVIEWS <br> <span
-                                                class="text-black font-weight-bold">1,152</span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
                                         </div>
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> RATING <br> <span
-                                                class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
                                         </div>
-                                        <div class="text-black" style="font-weight: 500;"> Lagos, Nigeria.</div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
-                                    <img src="images/bottle.png" class="card-img-top divrounded-top" alt="vendor image">
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="2500">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="card-title">13 Scents Perfumery </h5>
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
                                             <a href="#" target="_blank" style="text-decoration: none;"> <i
                                                     class="fas text-secondary fa-external-link-alt"></i></a>
                                         </div>
-                                        <p class="card-text font-weight-light">Some quick example text to build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> REVIEWS <br> <span
-                                                class="text-black font-weight-bold">1,152</span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
                                         </div>
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> RATING <br> <span
-                                                class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
                                         </div>
-                                        <div class="text-black" style="font-weight: 500;"> Lagos, Nigeria.</div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
-                                    <img src="images/bottle.png" class="card-img-top divrounded-top" alt="vendor image">
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="3000">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="card-title">13 Scents Perfumery </h5>
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
                                             <a href="#" target="_blank" style="text-decoration: none;"> <i
                                                     class="fas text-secondary fa-external-link-alt"></i></a>
                                         </div>
-                                        <p class="card-text font-weight-light">Some quick example text to build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> REVIEWS <br> <span
-                                                class="text-black font-weight-bold">1,152</span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
                                         </div>
-                                        <div class="small h6 text-muted" style="font-weight: 600;"> RATING <br> <span
-                                                class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star text-orange"></span>
-                                            <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
                                         </div>
-                                        <div class="text-black" style="font-weight: 500;"> Lagos, Nigeria.</div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="1700">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
+                                    <div class="card-body">
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
+                                            <a href="#" target="_blank" style="text-decoration: none;"> <i
+                                                    class="fas text-secondary fa-external-link-alt"></i></a>
+                                        </div>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
+                                    </div>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
+                                        </div>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="2500">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
+                                    <div class="card-body">
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
+                                            <a href="#" target="_blank" style="text-decoration: none;"> <i
+                                                    class="fas text-secondary fa-external-link-alt"></i></a>
+                                        </div>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
+                                    </div>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
+                                        </div>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 py-3 px-4" data-aos="zoom-in" data-aos-duration="3000">
+                                <div class="card shadow-blrb border-0 divrounded blrb-h">
+                                    <img src="images/bottle.png" class="card-img-top divrounded-top"
+                                        alt="{{vendor}} image">
+                                    <div class="card-body">
+                                        <div class="d-flex pt-3 justify-content-between">
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents
+                                                Perfumery </h5>
+                                            <a href="#" target="_blank" style="text-decoration: none;"> <i
+                                                    class="fas text-secondary fa-external-link-alt"></i></a>
+                                        </div>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
+                                    </div>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="small h6" style="font-weight: 600; font-size: 14px; color: #8F9BB3;
+                                        ">
+                                            REVIEWS
+                                            <div style="font-size: 16px; padding-top: 5px;">
+                                                <span class="text-black">1,152</span>
+                                            </div>
+                                        </div>
+                                        <div class="h6" style="font-weight: 600;font-size: 14px; color: #8F9BB3;">
+                                            RATING
+                                            <div style="font-size: 12px; padding-top: 5px;">
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star text-orange"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="d-none d-lg-block" style="font-weight: 500; color: rgb(73,73,73,1);
+                                        "> Lagos,
+                                            Nigeria.</div>
 
                                     </div>
                                 </div>
@@ -327,23 +518,23 @@
 
         </div>
         <div class="Review">
-            <div class="container">
+            <div class="container-fluid px-5 pb-5 mb-5">
                 <div class="row mb-5">
-                    <div class="col-12 col-md-8">
-                        <div class="header h3 text-blue ">
+                    <div class="col-12 col-md-8 ">
+                        <div class="header header-font h3 pb-4 text-blue ">
                             Review Of The Week
                         </div>
-                        <div class="border border-warning divrounded">
+                        <div class="orange-border shadow-blrb divrounded">
                             <div class="row px-4 py-3">
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
                                         </div>
-                                        <span class="text-blue ml-2" style="font-weight:500;">
+                                        <span class="text-blue ml-2 resp-text" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <span class="" style="color:#8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
@@ -353,7 +544,7 @@
 
                                         </span>
                                     </div>
-                                    <div class="body my-3" style="font-size:18px;">
+                                    <div class="body my-3" style="color: rgb(50,53,78,1);">
                                         After a few days of experience, I found that the battery life is really great.
                                         The A13 process upgrade and ....
                                     </div>
@@ -371,29 +562,29 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="header h3 text-blue ">
+                        <div class="header header-font h3  pb-4 text-blue ">
                             Top Collections
                         </div>
-                        <div class="border border-warning divrounded">
+                        <div class="orange-border shadow-blrb divrounded">
                             <div class="row px-4 py-3">
                                 <div class="col-4">
                                     <img src="images/empty.png" class="w-100" alt="profile">
                                 </div>
                                 <div class="col-8 pt-1">
-                                    <div class="h6 mb-3 text-blue">Fashion Collections</div>
+                                    <div class="h6 mb-3 text-blue resp-text">Fashion Collections</div>
 
                                     <div class="row">
-                                        <div class=" col-4">
-                                            <div class="small h6 text-muted" style="font-weight: 600;">
+                                        <div class="col-4">
+                                            <div class="small h6" style="color:#8F9BB3;font-weight: 600;">
                                                 STORES
                                             </div>
-                                            <div class="text-black" style="font-size: 16px;"> 152 </div>
+                                            <div class="text-black" style="font-size: 16px; "> 152 </div>
                                         </div>
                                         <div class="col-8">
-                                            <div class="small h6 text-muted" style="font-weight: 600;">
+                                            <div class="small h6" style="font-weight: 600; color:#8F9BB3">
                                                 RATING
                                             </div>
-                                            <span class="text-muted">
+                                            <span style="color:#8F9BB3; font-size: 13px;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
@@ -411,20 +602,20 @@
                                     <img src="images/empty.png" class="w-100" alt="profile">
                                 </div>
                                 <div class="col-8 pt-1">
-                                    <div class="h6 mb-3 text-blue">Fashion Collections</div>
+                                    <div class="h6 mb-3 text-blue resp-text">Fashion Collections</div>
 
                                     <div class="row">
-                                        <div class=" col-4">
-                                            <div class="small h6 text-muted" style="font-weight: 600;">
+                                        <div class="col-4">
+                                            <div class="small h6" style="color:#8F9BB3;font-weight: 600;">
                                                 STORES
                                             </div>
-                                            <div class="text-black" style="font-size: 16px;"> 152 </div>
+                                            <div class="text-black" style="font-size: 16px; "> 152 </div>
                                         </div>
                                         <div class="col-8">
-                                            <div class="small h6 text-muted" style="font-weight: 600;">
+                                            <div class="small h6" style="font-weight: 600; color:#8F9BB3">
                                                 RATING
                                             </div>
-                                            <span class="text-muted">
+                                            <span style="color:#8F9BB3; font-size: 13px; ">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
@@ -442,20 +633,20 @@
                                     <img src="images/empty.png" class="w-100" alt="profile">
                                 </div>
                                 <div class="col-8 pt-1">
-                                    <div class="h6 mb-3 text-blue">Fashion Collections</div>
+                                    <div class="h6 mb-3 text-blue resp-text">Fashion Collections</div>
 
                                     <div class="row">
-                                        <div class=" col-4">
-                                            <div class="small h6 text-muted" style="font-weight: 600;">
+                                        <div class="col-4">
+                                            <div class="small h6" style="color:#8F9BB3;font-weight: 600;">
                                                 STORES
                                             </div>
-                                            <div class="text-black" style="font-size: 16px;"> 152 </div>
+                                            <div class="text-black" style="font-size: 16px; "> 152 </div>
                                         </div>
                                         <div class="col-8">
-                                            <div class="small h6 text-muted" style="font-weight: 600;">
+                                            <div class="small h6" style="font-weight: 600; color:#8F9BB3">
                                                 RATING
                                             </div>
-                                            <span class="text-muted">
+                                            <span style="color:#8F9BB3; font-size: 13px;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
@@ -477,10 +668,10 @@
         </div>
 
         <div class="categories bg-blue">
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="row py-5">
                     <div class="col-12 my-3">
-                        <div class="h1 text-white">Categories </div>
+                        <div class="h1 text-white header-font">Categories </div>
                     </div>
 
 
@@ -488,22 +679,22 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="blurbs bg-white d-flex align-items-end">
-                                    <div class="h5 mx-auto">Fashion</div>
+                                    <div class="h5 mx-auto resp-text">Fashion</div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="blurbs bg-white d-flex align-items-end">
-                                    <div class="h5 mx-auto">Restaurant</div>
+                                    <div class="h5 mx-auto resp-text">Restaurant</div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="blurbs bg-white d-flex align-items-end">
-                                    <div class="h5 mx-auto">Hair & Beauty</div>
+                                    <div class="h5 mx-auto resp-text">Hair & Beauty</div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="blurbs bg-white d-flex align-items-end">
-                                    <div class="h5 mx-auto">Automobile</div>
+                                    <div class="h5 mx-auto resp-text">Automobile</div>
                                 </div>
                             </div>
                         </div>
@@ -512,22 +703,22 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="blurbs bg-white d-flex align-items-end">
-                                    <div class="h5 mx-auto">Fashion</div>
+                                    <div class="h5 mx-auto resp-text">Fashion</div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="blurbs bg-white d-flex align-items-end">
-                                    <div class="h5 mx-auto">Restaurant</div>
+                                    <div class="h5 mx-auto resp-text">Restaurant</div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="blurbs bg-white d-flex align-items-end">
-                                    <div class="h5 mx-auto">Hair & Beauty</div>
+                                    <div class="h5 mx-auto resp-text">Hair & Beauty</div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="blurbs bg-white d-flex align-items-end">
-                                    <div class="h5 mx-auto">Automobile</div>
+                                    <div class="h5 mx-auto resp-text">Automobile</div>
                                 </div>
                             </div>
                         </div>
@@ -537,20 +728,21 @@
         </div>
 
         <div class="recent-reviews">
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="row pt-5">
                     <div class="col-12 d-flex justify-content-between">
                         <div class="h3">Recent Reviews</div>
                         <a href="#" style="text-decoration: none;">
-                            <div class="text-blue"> <i class="fas mr-2 fa-filter"></i> Filter <i
-                                    class="fas ml-2 fa-angle-down"></i>
+                            <div class="resp-text" style="color:rgba(21, 34, 78, 0.8);"> <i
+                                    class=" fas mr-2 fa-filter"></i>
+                                Filter <i class="fas ml-2 fa-angle-down"></i>
                             </div>
                         </a>
                     </div>
                     <div class="col-12">
                         <div class="row pb-3">
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
+                            <div class="col-12 col-md-4 py-3 px-4">
+                                <div class="card shadow-blrb border-0 divrounded big-blrb-h">
                                     <div class="px-3 py-3 d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
@@ -558,36 +750,35 @@
                                         <span class="text-blue ml-2" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <div style="font-size: 24px; padding-top: 5px; color: #8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
+                                            </div>
+
                                             <span>Added a photo and review</span>
                                         </span>
                                     </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
+                                    <img src="images/bottle.png" class="card-img-top" alt="{{vendor}} image">
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents Perfumery </h5>
                                             <p class="font-italic">Lagos, Nigeria</p>
                                         </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="text-black"> <i class="far fa-heart text-danger"
+                                                style="font-size:22px;"></i><span class="ml-2"
+                                                style="font-weight: 500;">Favorite </span>
                                         </div>
                                         <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
+                                            <i class="fas fa-share-alt" style="font-size:22px;"></i><span class="ml-2"
                                                 style="font-weight: 500;">Share </span>
                                         </div>
 
@@ -595,8 +786,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
+                            <div class="col-12 col-md-4 py-3 px-4">
+                                <div class="card shadow-blrb border-0 divrounded big-blrb-h">
                                     <div class="px-3 py-3 d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
@@ -604,36 +795,35 @@
                                         <span class="text-blue ml-2" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <div style="font-size: 24px; padding-top: 5px; color: #8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
+                                            </div>
+
                                             <span>Added a photo and review</span>
                                         </span>
                                     </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
+                                    <img src="images/bottle.png" class="card-img-top" alt="{{vendor}} image">
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents Perfumery </h5>
                                             <p class="font-italic">Lagos, Nigeria</p>
                                         </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="text-black"> <i class="far fa-heart text-danger"
+                                                style="font-size:22px;"></i><span class="ml-2"
+                                                style="font-weight: 500;">Favorite </span>
                                         </div>
                                         <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
+                                            <i class="fas fa-share-alt" style="font-size:22px;"></i><span class="ml-2"
                                                 style="font-weight: 500;">Share </span>
                                         </div>
 
@@ -641,9 +831,8 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
+                            <div class="col-12 col-md-4 py-3 px-4">
+                                <div class="card shadow-blrb border-0 divrounded big-blrb-h">
                                     <div class="px-3 py-3 d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
@@ -651,36 +840,35 @@
                                         <span class="text-blue ml-2" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <div style="font-size: 24px; padding-top: 5px; color: #8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
+                                            </div>
+
                                             <span>Added a photo and review</span>
                                         </span>
                                     </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
+                                    <img src="images/bottle.png" class="card-img-top" alt="{{vendor}} image">
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents Perfumery </h5>
                                             <p class="font-italic">Lagos, Nigeria</p>
                                         </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="text-black"> <i class="far fa-heart text-danger"
+                                                style="font-size:22px;"></i><span class="ml-2"
+                                                style="font-weight: 500;">Favorite </span>
                                         </div>
                                         <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
+                                            <i class="fas fa-share-alt" style="font-size:22px;"></i><span class="ml-2"
                                                 style="font-weight: 500;">Share </span>
                                         </div>
 
@@ -688,8 +876,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
+                            <div class="col-12 col-md-4 py-3 px-4">
+                                <div class="card shadow-blrb border-0 divrounded big-blrb-h">
                                     <div class="px-3 py-3 d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
@@ -697,36 +885,35 @@
                                         <span class="text-blue ml-2" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <div style="font-size: 24px; padding-top: 5px; color: #8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
+                                            </div>
+
                                             <span>Added a photo and review</span>
                                         </span>
                                     </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
+                                    <img src="images/bottle.png" class="card-img-top" alt="{{vendor}} image">
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents Perfumery </h5>
                                             <p class="font-italic">Lagos, Nigeria</p>
                                         </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="text-black"> <i class="far fa-heart text-danger"
+                                                style="font-size:22px;"></i><span class="ml-2"
+                                                style="font-weight: 500;">Favorite </span>
                                         </div>
                                         <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
+                                            <i class="fas fa-share-alt" style="font-size:22px;"></i><span class="ml-2"
                                                 style="font-weight: 500;">Share </span>
                                         </div>
 
@@ -734,8 +921,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
+                            <div class="col-12 col-md-4 py-3 px-4">
+                                <div class="card shadow-blrb border-0 divrounded big-blrb-h">
                                     <div class="px-3 py-3 d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
@@ -743,36 +930,35 @@
                                         <span class="text-blue ml-2" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <div style="font-size: 24px; padding-top: 5px; color: #8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
+                                            </div>
+
                                             <span>Added a photo and review</span>
                                         </span>
                                     </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
+                                    <img src="images/bottle.png" class="card-img-top" alt="{{vendor}} image">
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents Perfumery </h5>
                                             <p class="font-italic">Lagos, Nigeria</p>
                                         </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="text-black"> <i class="far fa-heart text-danger"
+                                                style="font-size:22px;"></i><span class="ml-2"
+                                                style="font-weight: 500;">Favorite </span>
                                         </div>
                                         <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
+                                            <i class="fas fa-share-alt" style="font-size:22px;"></i><span class="ml-2"
                                                 style="font-weight: 500;">Share </span>
                                         </div>
 
@@ -780,8 +966,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
+                            <div class="col-12 col-md-4 py-3 px-4">
+                                <div class="card shadow-blrb border-0 divrounded big-blrb-h">
                                     <div class="px-3 py-3 d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
@@ -789,36 +975,35 @@
                                         <span class="text-blue ml-2" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <div style="font-size: 24px; padding-top: 5px; color: #8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
+                                            </div>
+
                                             <span>Added a photo and review</span>
                                         </span>
                                     </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
+                                    <img src="images/bottle.png" class="card-img-top" alt="{{vendor}} image">
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents Perfumery </h5>
                                             <p class="font-italic">Lagos, Nigeria</p>
                                         </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="text-black"> <i class="far fa-heart text-danger"
+                                                style="font-size:22px;"></i><span class="ml-2"
+                                                style="font-weight: 500;">Favorite </span>
                                         </div>
                                         <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
+                                            <i class="fas fa-share-alt" style="font-size:22px;"></i><span class="ml-2"
                                                 style="font-weight: 500;">Share </span>
                                         </div>
 
@@ -826,8 +1011,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
+                            <div class="col-12 col-md-4 py-3 px-4">
+                                <div class="card shadow-blrb border-0 divrounded big-blrb-h">
                                     <div class="px-3 py-3 d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
@@ -835,36 +1020,35 @@
                                         <span class="text-blue ml-2" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <div style="font-size: 24px; padding-top: 5px; color: #8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
+                                            </div>
+
                                             <span>Added a photo and review</span>
                                         </span>
                                     </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
+                                    <img src="images/bottle.png" class="card-img-top" alt="{{vendor}} image">
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents Perfumery </h5>
                                             <p class="font-italic">Lagos, Nigeria</p>
                                         </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="text-black"> <i class="far fa-heart text-danger"
+                                                style="font-size:22px;"></i><span class="ml-2"
+                                                style="font-weight: 500;">Favorite </span>
                                         </div>
                                         <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
+                                            <i class="fas fa-share-alt" style="font-size:22px;"></i><span class="ml-2"
                                                 style="font-weight: 500;">Share </span>
                                         </div>
 
@@ -872,8 +1056,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
+                            <div class="col-12 col-md-4 py-3 px-4">
+                                <div class="card shadow-blrb border-0 divrounded big-blrb-h">
                                     <div class="px-3 py-3 d-flex">
                                         <div class="img ">
                                             <img src="images/profile.png" alt="profile">
@@ -881,36 +1065,35 @@
                                         <span class="text-blue ml-2" style="font-weight:500;">
                                             Nifemi Bamgbose
                                             <br>
-                                            <span class="text-muted">
+                                            <div style="font-size: 24px; padding-top: 5px; color: #8F9BB3;">
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star text-orange"></span>
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
+                                            </div>
+
                                             <span>Added a photo and review</span>
                                         </span>
                                     </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
+                                    <img src="images/bottle.png" class="card-img-top" alt="{{vendor}} image">
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
+                                            <h5 class="card-title " style="font-weight: 600; font-size: 24px;">13
+                                                Scents Perfumery </h5>
                                             <p class="font-italic">Lagos, Nigeria</p>
                                         </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
+                                        <p class="card-text font-weight-light" style="font-size: 14px;">Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ullamcorper suscipit sagit tis,
+                                            elementum ultricies risus arcu vitae ultricies risus arcu vitae.</p>
                                     </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
+                                    <div class="border-top px-3 py-4 mx-0 d-flex justify-content-between">
+                                        <div class="text-black"> <i class="far fa-heart text-danger"
+                                                style="font-size:22px;"></i><span class="ml-2"
+                                                style="font-weight: 500;">Favorite </span>
                                         </div>
                                         <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
+                                            <i class="fas fa-share-alt" style="font-size:22px;"></i><span class="ml-2"
                                                 style="font-weight: 500;">Share </span>
                                         </div>
 
@@ -918,55 +1101,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 py-3">
-                                <div class="card shadow border-0 divrounded">
-                                    <div class="px-3 py-3 d-flex">
-                                        <div class="img ">
-                                            <img src="images/profile.png" alt="profile">
-                                        </div>
-                                        <span class="text-blue ml-2" style="font-weight:500;">
-                                            Nifemi Bamgbose
-                                            <br>
-                                            <span class="text-muted">
-                                                <span class="fa fa-star text-orange"></span>
-                                                <span class="fa fa-star text-orange"></span>
-                                                <span class="fa fa-star text-orange"></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star"></span>
-                                            </span>
-                                            <br>
-                                            <span>Added a photo and review</span>
-                                        </span>
-                                    </div>
-                                    <img src="images/bottle.png" class="card-img-top " alt="vendor image">
-                                    <div class="card-body">
-                                        <div class="">
-                                            <h5 class="card-title h4">13 Scents Perfumery </h5>
-                                            <p class="font-italic">Lagos, Nigeria</p>
-                                        </div>
-                                        <p class="card-text review-body font-weight-light">Some quick example text to
-                                            build on the
-                                            card title and
-                                            make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                    <div
-                                        class="border-top px-3 py-4 mx-0 d-flex align-items-center justify-content-between">
-                                        <div class="text-black"> <i class="far fa-heart text-danger"></i><span
-                                                class="ml-2" style="font-weight: 500;">Favorite </span>
-                                        </div>
-                                        <div class="text-black">
-                                            <i class="fas fa-share-alt"></i><span class="ml-2"
-                                                style="font-weight: 500;">Share </span>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
                         </div>
                         <div class="row py-3">
                             <div class="col-12">
@@ -983,11 +1117,14 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <script>
+        AOS.init();
     </script>
 </body>
