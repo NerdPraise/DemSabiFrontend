@@ -22,34 +22,33 @@
                             <br>credible vendors.
                         </div>
                         <div class="search mt-4 bg-blue rounded-lg">
-                            <form class="form-inline px-2 py-3 ">
-                                <div class="input-group mb-3">
-                                    <select class="category mr-sm-2 rounded form-control">
+                            <form class="form-inline row px-2 py-3 hero-form">
+                                <div class="col-md-2 d-sm-none d-md-block">
+                                    <select class="category rounded mr-1 form-control">
                                         <option value="">All categories</option>
                                         <option value="">More</option>
                                         <option value="">More</option>
                                         <option value="">More</option>
                                     </select>
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text rounded-left bg-white" id="basic-addon1"> <i
-                                                class="fas fa-search"></i></span>
-                                    </div>
-
-                                    <input type="text" list="vendors" class="search form-control border-0"
-                                        placeholder="Search all shoes, clothes, or plumbers..." aria-label="Username"
-                                        aria-describedby="basic-addon1">
-                                    <div class="input-group ">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1"> <i
-                                                    class="fas fa-map-marker-alt"></i></span>
-                                        </div>
-                                        <input type="text" class="search form-control border-0" placeholder="Location"
-                                            aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-                                    <input class="btn btn-orange ml-2 text-white" value="SEARCH">
                                 </div>
-
-
+                                <div class="col-8 col-md-8">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text bg-white"><i
+                                                    class="fas fa-search text-blue"></i></span>
+                                        </div>
+                                        <input type="text" class="search form-control border-0"
+                                            placeholder="Search all shoes, clothes, or plumbers... ">
+                                        <span class="input-group-text rounded-0 border-right-0 bg-white"
+                                            id="basic-addon1">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </span>
+                                        <input type="text" class="search form-control border-0" placeholder="Location">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <button type="submit" class="ml-2 text-white btn-orange btn">SEARCH</button>
+                                </div>
                                 <datalist id="vendors">
                                 </datalist>
                             </form>

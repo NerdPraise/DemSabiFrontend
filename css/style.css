@@ -110,3 +110,8 @@
     border: 2px solid #F4991A;
     height:400px;
 }
+
+.hero-form select, .hero-form input {
+    height:58px;
+    width:calc(200px + (200 - 130) * ((100vw - 300px) / (1600 - 300)))
+}
