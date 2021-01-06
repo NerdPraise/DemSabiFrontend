@@ -16,39 +16,38 @@
         <div class="hero mb-5">
             <div class="container-fluid px-5 pt-5">
                 <div class="row pt-5">
-                    <div class="col-11 mx-auto">
+                    <div class="col-9 mx-auto">
                         <div class="hero-header h1 font-weight-bold text-white text-center"> An online platform to
                             access best
                             <br>credible vendors.
                         </div>
                         <div class="search mt-4 bg-blue rounded-lg">
-                            <form class="form-inline row px-2 py-3 hero-form">
-                                <div class="col-md-2 d-sm-none d-md-block">
-                                    <select class="category rounded mr-1 form-control">
-                                        <option value="">All categories</option>
-                                        <option value="">More</option>
-                                        <option value="">More</option>
-                                        <option value="">More</option>
-                                    </select>
-                                </div>
-                                <div class="col-8 col-md-8">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text bg-white"><i
-                                                    class="fas fa-search text-blue"></i></span>
-                                        </div>
-                                        <input type="text" class="search form-control border-0"
-                                            placeholder="Search all shoes, clothes, or plumbers... ">
-                                        <span class="input-group-text rounded-0 border-right-0 bg-white"
-                                            id="basic-addon1">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </span>
-                                        <input type="text" class="search form-control border-0" placeholder="Location">
+                            <form class="form-inline py-3 hero-form ">
+
+                                <select class="category custom-select rounded mr-1 form-control">
+                                    <option value="">All categories</option>
+                                    <option value="">More</option>
+                                    <option value="">More</option>
+                                    <option value="">More</option>
+                                </select>
+
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-white"><i
+                                                class="fas fa-search text-blue"></i></span>
                                     </div>
+                                    <input type="text" class="search form-control border-0"
+                                        placeholder="Search all shoes, clothes, or plumbers... ">
+                                    <span class="input-group-text d-none d-md-block rounded-0 border-right-0 bg-white"
+                                        id="basic-addon1">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <input type="text" class="search d-none d-md-block form-control border-0"
+                                        placeholder="Location">
                                 </div>
-                                <div class="col-4 col-md-2">
-                                    <button type="submit" class="ml-2 text-white btn-orange btn">SEARCH</button>
-                                </div>
+
+                                <button type="submit" class="text-white btn-orange px-2 btn">SEARCH</button>
+
                                 <datalist id="vendors">
                                 </datalist>
                             </form>

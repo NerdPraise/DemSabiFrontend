@@ -1,0 +1,25 @@
+.resp-text-50 {
+    font-size: calc(39px + (50 - 39) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700; 
+}
+
+.fixed-lay-left {
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+    left: 0
+}
+
+.sign-up-form input {
+    height: 54px;
+    border: 1px solid #A2A1A1;
+    border-radius: 4px;
+}
+
+.sign-up-form label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(21,34,78,1);
+
+}
