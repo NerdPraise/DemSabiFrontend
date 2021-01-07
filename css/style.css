@@ -38,6 +38,11 @@
     font-family: 'Graphik', Fallback, sans-serif;
 }
 
+:root {
+    --blue:#15224E;
+    --orange: #F4991A;
+}
+
 .gradient-color {
     background: -webkit-linear-gradient(45deg, #E00909, #EB12A9, #0e03a1);
     background-clip: text;
@@ -46,7 +51,7 @@
 }
 
 .text-blue {
-    color: #15224E !important;
+    color: var(--blue) !important;
 }
 
 .text-black {
@@ -54,15 +59,15 @@
 }
 
 .text-orange {
-    color: #F4991A !important;
+    color:var(--orange) !important;
 }
 
 .bg-blue, .btn-blue {
-    background-color: #15224E !important;
+    background-color: var(--blue) !important;
 }
 
 .btn-orange {
-    background-color: #F4991A !important;
+    background-color:var(--orange) !important;
 }
 
 .hero {
@@ -107,7 +112,7 @@
 }
 
 .orange-border {
-    border: 2px solid #F4991A;
+    border: 2px solidvar(--orange);
     height:400px;
 }
 

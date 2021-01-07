@@ -23,14 +23,14 @@
                         </div>
                         <div class="search mt-4 bg-blue rounded-lg">
                             <form class="form-inline py-3 hero-form ">
-
-                                <select class="category custom-select rounded mr-1 form-control">
-                                    <option value="">All categories</option>
-                                    <option value="">More</option>
-                                    <option value="">More</option>
-                                    <option value="">More</option>
-                                </select>
-
+                                <div class="select">
+                                    <select class="category custom-select rounded mr-1 form-control">
+                                        <option value="">All categories</option>
+                                        <option value="">More</option>
+                                        <option value="">More</option>
+                                        <option value="">More</option>
+                                    </select>
+                                </div>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-white"><i
@@ -45,8 +45,9 @@
                                     <input type="text" class="search d-none d-md-block form-control border-0"
                                         placeholder="Location">
                                 </div>
-
-                                <button type="submit" class="text-white btn-orange px-2 btn">SEARCH</button>
+                                <div>
+                                    <button type="submit" class="text-white btn-orange px-2 btn">SEARCH</button>
+                                </div>
 
                                 <datalist id="vendors">
                                 </datalist>
