@@ -116,9 +116,17 @@
     height:400px;
 }
 
-.hero-form select, .hero-form input {
+.hero-form select, .hero-form input, .hero-form button {
     height:58px;
-    width:calc(200px + (200 - 130) * ((100vw - 300px) / (1600 - 300)))
+}
+
+.hero-form input{
+width: 100%
+}
+
+.hero-form select{
+    width:calc(110px + (300px - 102) * ((100vw - 300px) / (1600 - 300)))
+
 }
 
 .collection-blrbs {
